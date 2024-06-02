@@ -1,27 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-body{
+body {
   font-family: "DM Sans", sans-serif;
   background-color: #0F1724;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.header{
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 120px
 }
 
-.fotoHeader{
+.fotoHeader {
   width: 220px;
 }
 
-.textsHeader{
+.textsHeader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,25 +30,25 @@ body{
   text-align: center;
 }
 
-.textsHeader h1{
+.textsHeader h1 {
   font-size: 57px;
   font-weight: 600;
   color: #01DFB2;
   letter-spacing: 2px;
 }
 
-.textsHeader h1 span{
+.textsHeader h1 span {
   color: #FFFF;
 }
 
-.textsHeader p{
+.textsHeader p {
   font-size: 19px;
   margin-top: 10px;
   color: #868686;
 }
 
 
-.btnHeader{
+.btnHeader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,11 +63,55 @@ body{
   padding: 25px 60px;
 }
 
-.btnHeader img{
+.btnHeader:hover{
+  background-color: #0CA3B8;
+  border: none;
+  border: solid 2px #0CA3B8;
+  border-radius: 15px;
+  color: #FFFF;
+}
+
+.btnHeader img {
   width: 25px;
   margin-right: 20px;
 }
 
-.fotoHeader, .textsHeader, .btnHeader{
+.fotoHeader,
+.textsHeader,
+.btnHeader {
   margin-top: 40px;
+}
+
+@media (max-width: 650px) {
+  .fotoHeader {
+    width: 130px;
+  }
+
+  .textsHeader h1 {
+    font-size: 31px;
+    letter-spacing: 1px;
+  }
+  
+  .textsHeader h1 span {
+    color: #FFFF;
+  }
+  
+  .textsHeader p {
+    font-size: 11px;
+    margin-top: 10px;
+    color: #868686;
+  }
+
+  .btnHeader {
+    color: #FFFF;
+    font-size: 10px;
+    font-weight: 200;
+  
+    padding: 20px 30px;
+  }
+  
+  .btnHeader img {
+    width: 20px;
+    margin-right: 20px;
+  }
 }
