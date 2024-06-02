@@ -1,0 +1,39 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    border-bottom: solid 2px #141F30;
+}
+
+img{
+    width: 120px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    color: #FFFF;
+    list-style: none;
+}
+
+a{
+    padding: 10px 23px;
+    font-weight: 400;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #01DFB2;
+}
+
+@media (max-width: 1400px){
+
+    ul{
+        display: none;
+    }
+
+}
