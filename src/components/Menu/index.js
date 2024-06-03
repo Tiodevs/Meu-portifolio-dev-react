@@ -3,7 +3,30 @@ import logo from '../../assets/LogoFelipe.svg'
 import './hamburgers.css'
 import { useState } from 'react'
 
+// gsap
+import { useLayoutEffect } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+
 export function Menu() {
+
+    useLayoutEffect(() => {
+        gsap.to("#menuAnimation",{
+          opacity:1,
+          duration:2,
+          stagger: 0.1,
+          ease: 'power2.inOut',
+          delay: 0.5,
+          y: 0,
+    
+        })
+    
+        return() => {
+          gsap.killTweensOf(".tituloProjetos")
+        }
+    
+      },[])
 
     const [isActive, setIsActive] = useState('hamburger hamburger--collapse')
     const [menuMobi, setMenuMobi] = useState(style.menuMobi)
@@ -23,7 +46,7 @@ export function Menu() {
     }
 
     return (
-        <nav className={style.menu}>
+        <nav className={style.menu} id='menuAnimation'>
             <div>
 
                 <img src={logo} alt='Logo Header' />

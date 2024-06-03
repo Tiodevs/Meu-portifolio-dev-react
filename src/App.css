@@ -4,6 +4,7 @@
 body {
   font-family: "DM Sans", sans-serif;
   background-color: #0F1724;
+  overflow-x: hidden;
 }
 
 * {
@@ -23,6 +24,11 @@ body {
 
 .fotoHeader {
   width: 220px;
+}
+
+.animatioHeader {
+  transform: translateY(300px);
+  opacity: -1;
 }
 
 .textsHeader {
@@ -62,11 +68,11 @@ body {
   color: #FFFF;
   font-size: 17px;
   font-weight: 200;
-
+  cursor: pointer;
   padding: 25px 60px;
 }
 
-.btnHeader:hover{
+.btnHeader:hover {
   background-color: #0CA3B8;
   border: none;
   border: solid 2px #0CA3B8;
@@ -94,11 +100,11 @@ body {
     font-size: 31px;
     letter-spacing: 1px;
   }
-  
+
   .textsHeader h1 span {
     color: #FFFF;
   }
-  
+
   .textsHeader p {
     font-size: 11px;
     margin-top: 10px;
@@ -109,10 +115,10 @@ body {
     color: #FFFF;
     font-size: 10px;
     font-weight: 200;
-  
+
     padding: 20px 30px;
   }
-  
+
   .btnHeader img {
     width: 20px;
     margin-right: 20px;
@@ -121,7 +127,7 @@ body {
 
 /* Projetos :D */
 
-#projetos{
+#projetos {
   background-color: #181F32;
   width: 100%;
   margin-top: 100px;
@@ -133,9 +139,10 @@ body {
   min-height: 100vh;
   border-top: solid 1px #243755;
   border-bottom: solid 1px #243755;
+  transform: translateY(300px);
 }
 
-.sectionTituloProjetos{
+.sectionTituloProjetos {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,36 +150,217 @@ body {
   margin-bottom: 40px;
 }
 
-.tituloProjetos{
+.tituloProjetos {
   color: #FFFF;
   font-size: 58px;
   text-align: center;
 }
 
-.linhaTituloProjetos{
+.linhaTituloProjetos {
   width: 167px;
   height: 6px;
   background-color: #01DFB2;
 }
 
 @media (max-width: 1100px) {
-  .tituloProjetos{
+  .tituloProjetos {
     color: #FFFF;
     font-size: 10vw;
     text-align: center;
   }
-  
-  .linhaTituloProjetos{
+
+  .linhaTituloProjetos {
     width: 30vw;
     height: 6px;
     background-color: #01DFB2;
   }
 
-  .sectionTituloProjetos{
+  .sectionTituloProjetos {
     margin-bottom: 0px;
   }
 
-  #projetos{
+  #projetos {
     padding: 50px 0px;
   }
 }
+
+/* Sobre mim */
+
+.sectionSobre {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 100px;
+}
+
+
+.sobreTitulos {
+  position: sticky;
+  top: 95px;
+  background-color: #0F1724;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.sobreFoto {
+  width: 450px;
+  position: sticky;
+  top: 100px
+}
+
+.sobreInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  color: #FFFF;
+  margin-left: 60px;
+  width: 500px;
+}
+
+.sobreCards {
+  margin-top: 48px;
+}
+
+.sobreTitulo {
+  color: #01DFB2;
+  font-size: 50px;
+}
+
+.sobreCardsTitulo {
+  font-size: 40px;
+}
+
+.sobreCardsDescricao {
+  color: #A9A9A9;
+}
+
+
+@media (max-width: 1100px) {
+
+  .sectionSobre {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 30px;
+  }
+
+  .sobreFoto {
+    width: 450px;
+    position: relative;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sobreTitulos {
+    position: relative;
+  }
+
+  .sobreInfo {
+    margin-left: 0px;
+  }
+
+}
+
+@media (max-width: 650px){
+  .sobreInfo {
+    padding: 20px 20px;
+    width: 100%;
+  }
+
+  .sobreInfo {
+    width: 100%;
+  }
+
+  .a{
+    margin-top: 130px;
+  }
+
+  .sobreFoto{
+    width: 90%;
+  }
+  
+  .sobreTitulo {
+    color: #01DFB2;
+    font-size: 31px;
+  }
+
+  .sobreCardsTitulo {
+    font-size: 31px;
+    padding: 0 20px;
+  }
+
+  .sobreCardsDescricao{
+    font-size: 11px;
+    padding: 0 20px;
+  }
+}
+
+
+  /* CTA final */
+
+  .ctaFinal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px 0px
+  }
+
+  .ctaFinalText {
+    color: #FFF;
+    font-size: 50px;
+  }
+
+  .ctaFinalText span {
+    color: #01DFB2;
+  }
+
+  .ctaFinalBtn {
+    width: 451px;
+    height: 84px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #FFFF;
+    background-color: #0CA3B8;
+    border: none;
+    border-radius: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+
+  .ctaFinalBtn:hover {
+    background-color: #0fcce6;
+  }
+
+  .ctaFinalBtn img {
+    width: 22px;
+    margin-left: 10px;
+  }
+
+  /* Footer */
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 88px 0px;
+    border-top: solid 1px #243755;
+  }
+
+  .logoFooter {
+    margin-right: 40px;
+  }
+
+  .iconsFooter a {
+    padding: 0;
+  }
+
+
+  .iconsFooter img {
+    width: 30px;
+    padding: 0px 7px;
+  }
