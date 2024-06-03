@@ -341,6 +341,24 @@ body {
     margin-left: 10px;
   }
 
+
+  @media (max-width: 650px){
+    .ctaFinalText {
+      font-size: 30px;
+    }
+
+    .ctaFinalBtn {
+      width: 260px;
+      height: 70px;
+      font-size: 13px; 
+      margin-top: 30px;
+    }
+    .ctaFinal{
+      margin: 100px 0px;
+    }
+  }
+  
+
   /* Footer */
 
   footer {
@@ -363,4 +381,18 @@ body {
   .iconsFooter img {
     width: 30px;
     padding: 0px 7px;
+  }
+
+  @media (max-width: 650px){
+    footer{
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logoFooter {
+      margin-right: 0px;
+      margin-top: 40px;
+      scale: 1.3;
+    }
   }
