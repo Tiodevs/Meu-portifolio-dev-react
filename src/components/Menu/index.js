@@ -15,7 +15,7 @@ export function Menu() {
             setIsActive("hamburger hamburger--collapse")
         }
 
-        if (menuMobi == style.menuMobi) {
+        if (menuMobi === style.menuMobi) {
             setMenuMobi(style.menuMobiOpen)
         } else {
             setMenuMobi(style.menuMobi)
@@ -29,7 +29,7 @@ export function Menu() {
                 <img src={logo} alt='Logo Header' />
 
                 <ul>
-                    <a href='.header'>Projetos</a>
+                    <a href='#projetos'>Projetos</a>
                     <a href='.header'>Sobre mim</a>
                     <a href='.header'>Contato</a>
                     <a href='.header'>Meu CV</a>

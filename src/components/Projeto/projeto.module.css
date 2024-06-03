@@ -1,0 +1,113 @@
+.projeto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 90px;
+}
+
+.projeto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 90px;
+}
+
+.capaProjeto{
+    width: 460px;
+    height: 345px;
+}
+
+.projetoText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    width: 470px;
+    padding-left: 30px;
+}
+
+.projetoText2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: end;
+    width: 470px;
+    padding-right: 30px;
+}
+
+.projetoTitulo{
+    color: #01DFB2;
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+.projetoTitulo span{
+    color: #FFFF;
+}
+
+.projetoDescrição{
+    font-size: 17px;
+    color: #a8a8a8;
+    margin-top: 13px;
+}
+
+.projetoLinks{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verSite{
+    font-size: 15px;
+    padding: 13px 23px;
+    color: #243755;
+    background-color: #FFFF;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.linkGit{
+    width: 35px;
+    margin-left: 10px;
+}
+
+@media (max-width: 1100px) {
+
+    .projeto, .projeto2{
+        flex-direction: column;
+    }
+
+    .capaProjeto{
+        width: 70%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    
+    .projetoText, .projetoText2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 90%;
+    }
+
+    .projetoTitulo{
+        font-size: 5.5vw;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+    }
+    
+    .projetoDescrição{
+        font-size: 3.5vw;
+        color: #a8a8a8;
+        margin-top: 13px;
+    }
+}
