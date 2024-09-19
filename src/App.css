@@ -1,6 +1,10 @@
 /* Padrão */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "DM Sans", sans-serif;
   background-color: #0F1724;
@@ -366,6 +370,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 88px 0px;
+    margin-top: 150px;
     border-top: solid 1px #243755;
   }
 

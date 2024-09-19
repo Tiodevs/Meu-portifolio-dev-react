@@ -6,7 +6,7 @@ import { useState } from 'react'
 // gsap
 import { useLayoutEffect } from 'react'
 import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+// import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 
 export function Menu() {
@@ -53,9 +53,8 @@ export function Menu() {
 
                 <ul>
                     <a href='#projetos'>Projetos</a>
-                    <a href='.header'>Sobre mim</a>
-                    <a href='.header'>Contato</a>
-                    <a href='.header'>Meu CV</a>
+                    <a href='#sectionSobre'>Sobre mim</a>
+                    <a href='https://www.linkedin.com/in/felipe-pereira-dos-santos-a1a3b9207/' target='_blank'>Linkedin</a>
                 </ul>
 
 
@@ -67,10 +66,9 @@ export function Menu() {
             </div>
 
             <ul className={menuMobi}>
-                <a href='.header'>Projetos</a>
-                <a href='.header'>Sobre mim</a>
-                <a href='.header'>Contato</a>
-                <a href='.header'>Meu CV</a>
+            <a href='#projetos'>Projetos</a>
+                    <a href='#sectionSobre'>Sobre mim</a>
+                    <a href='https://www.linkedin.com/in/felipe-pereira-dos-santos-a1a3b9207/' target='_blank'>Linkedin</a>
             </ul>
         </nav>
 

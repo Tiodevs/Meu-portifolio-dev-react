@@ -11,9 +11,8 @@ import FotoHeader from './assets/fotoHeader.png'
 import FotoSobre from './assets/FotoSobre.png'
 import LogoGithub from './assets/LogoGitHub.svg'
 import IconArrow from './assets/IconArrow.png'
-import ProjetoRFCC from './assets/ProjetoRFCC.png'
-import ProjetoAssumtek from './assets/ProjetoAssumtek.png'
-import ProjetoTravelCommunity from './assets/ProjetoTravelCommunity.png'
+import ProjetoNotas from './assets/ProjetoNotas.png'
+import ProjetoFotos from './assets/ProjetoFotos.png'
 
 // Componentes
 import { Projeto } from './components/Projeto';
@@ -74,36 +73,29 @@ function App() {
 
         <Projeto
           modelo="1"
-          img={ProjetoRFCC}
-          titulo="RFCC "
-          titulo02="- site institucional para um hospital de câncer"
-          descrição="Feito com HTML, CSS, JS e hospedado no Firbase. O objetivo desse site é aumentar visibilidade dos projetos da RFCC e receber doações."
-          linkdosite="https://github.com/Tiodevs"
+          img={ProjetoNotas}
+          titulo="Frases notas "
+          titulo02="- site para anotar frases marcantes"
+          descrição="Feito com react.js, firebase para BD e back-end e hospedado na vercel. O objetivo desse site é ter um lugar especifico e seguro para registrar as melhores frases."
+          linkdosite="https://frasesnote.vercel.app/"
+          linkdorepositorio="https://github.com/Tiodevs/Frases-Note-React"
         />
 
         <Projeto
           modelo="2"
-          img={ProjetoAssumtek}
-          titulo="Assumtek "
-          titulo02="-  site institucional para cliente e B2B"
-          descrição="Feito com wordpress, elemntos, figma e Photoshop. O objetivo desse site ser um local onde apresenta a empresa e os produtos que ela oferece."
-          linkdosite="https://github.com/Tiodevs"
+          img={ProjetoFotos}
+          titulo="Portifólio de fotos "
+          titulo02="-  site para mostrar ensaios"
+          descrição="Feito com React.js, hospedado na vercel e o prototipo no figma e Photoshop. O objetivo desse site é apresentar de maneira bonita e simples os meus ensaios."
+          linkdosite="https://sitedefotos.vercel.app/"
+          linkdorepositorio="https://github.com/Tiodevs/sitedefotos"
         />
 
         {/* <TesteGSAP/>   */}
 
-        <Projeto
-          modelo="1"
-          img={ProjetoTravelCommunity}
-          titulo="Travel Community "
-          titulo02="- landing page para curso de ingês"
-          descrição="Feito com HTML, CSS, JS e hospedado no Firbase. O objetivo desse site é capturar leads e trazer mais informações sobre um novo lançamento."
-          linkdosite="https://github.com/Tiodevs"
-        />
-
       </div>
 
-      <div className='sectionSobre'>
+      <div className='sectionSobre' id='sectionSobre'>
         <img src={FotoSobre} className='sobreFoto' />
 
         <div className='sobreInfo'>
@@ -114,54 +106,49 @@ function App() {
             <p className='sobreDescricao'>Mini bio</p>
           </div>
 
-          <div className='sobreCards a'>
-            <h1 className='sobreCardsTitulo'>22 anos de idade</h1>
-            <p className='sobreCardsDescricao'>Eu tenho 22 anos de idade sou do Brasil, Curitiba. Sou apaixonado por tocar instrumentos, ler livros, escrever artigos, tirar fotos, conhecer pessoas e lugares novos.</p>
-          </div>
           <div className='sobreCards'>
             <h1 className='sobreCardsTitulo'>Voluntário </h1>
-            <p className='sobreCardsDescricao'>Com 20 anos eu aceitei o chamado de ser um missionário de serviço, ou seja, dedicar 2 anos integrais para ajudar as outras pessoas com meus talentos voluntariamente. Nesses dois anos ajudei muitas ONGs, hospitais e pequenas empresas.</p>
+            <p className='sobreCardsDescricao'>Em março de 2023, decidi pausar minha carreira para dedicar dois anos ao serviço voluntário em prol da comunidade. Durante esse período, tenho colaborado com <b> ONGs, hospitais</b> de tratamento de câncer e pequenas empresas, oferecendo meu apoio em diversas áreas. Para saber mais sobre essa experiência, fique à vontade para visitar meu LinkedIn.</p>
           </div>
+
+          <div className='sobreCards a'>
+            <h1 className='sobreCardsTitulo'>22 anos de idade</h1>
+            <p className='sobreCardsDescricao'>Eu tenho <b>22 anos</b> de idade sou do Brasil, Curitiba. Sou apaixonado por tocar instrumentos, ler livros, escrever artigos, tirar fotos, conhecer pessoas e lugares novos.</p>
+          </div>
+
           <div className='sobreCards'>
             <h1 className='sobreCardsTitulo'>4 anos de experiência</h1>
-            <p className='sobreCardsDescricao'>Em 2020, durante a pandemia eu descobri a minha habilidade em programação quando através da Alura fiz minha primeira pagina com HTML e CSS, depois disso fiz faculdade e outros cursos.</p>
-          </div>
-          <div className='sobreCards'>
-            <h1 className='sobreCardsTitulo'>Formação</h1>
-            <p className='sobreCardsDescricao'>Em 2020, durante a pandemia eu descobri a minha habilidade em programação quando através da Alura fiz minha primeira pagina com HTML e CSS, depois disso fiz faculdade e outros cursos. </p>
+            <p className='sobreCardsDescricao'>Em 2020, descobri minha paixão pela programação. Comecei com cursos básicos de HTML, CSS e JavaScript, e, em seguida, iniciei a <b>faculdade</b> de Análise e Desenvolvimento de Sistemas, onde pude aprofundar meu conhecimento. Tive a oportunidade de realizar o curso CS50x, <b>oferecido por Harvard</b>, o que ampliou ainda mais minha compreensão sobre tecnologia. Atualmente, estou me dedicando ao estudo para me tornar um programador fullstack altamente qualificado, com o objetivo de estar pronto para assumir projetos de maior complexidade.</p>
           </div>
           <div className='sobreCards'>
             <h1 className='sobreCardsTitulo'>Trabalhos</h1>
-            <p className='sobreCardsDescricao'>Em 2020, durante a pandemia eu descobri a minha habilidade em programação quando através da Alura fiz minha primeira pagina com HTML e CSS, depois disso fiz faculdade e outros cursos. </p>
+            <p className='sobreCardsDescricao'>Atuei durante um ano como instrutor de TI para jovens de 12 a 17 anos, ensinando disciplinas como Robótica, Front-end e Análise de Dados. Além disso, trabalhei como freelancer, desenvolvendo sites para empresas e criando sistemas internos personalizados, incluindo soluções para a área de RH.</p>
           </div>
           <div className='sobreCards'>
             <h1 className='sobreCardsTitulo'>Idiomas</h1>
-            <p className='sobreCardsDescricao'>Em 2020, durante a pandemia eu descobri a minha habilidade em programação quando através da Alura fiz minha primeira pagina com HTML e CSS, depois disso fiz faculdade e outros cursos. </p>
+            <p className='sobreCardsDescricao'>Possuo nível intermediário de inglês e estou constantemente me dedicando ao aperfeiçoamento desse idioma. </p>
           </div>
         </div>
       </div>
 
-      <div className='ctaFinal'>
-        <h1 className='ctaFinalText'>Não perca <span>tempo!!</span></h1>
-        <button className='ctaFinalBtn'>ENTRE EM CONTATO<img src={IconArrow}/></button>
-      </div>
+      
 
       <footer>
         <img src={LogoFelipe} alt='Logo Footer' className='logoFooter'/>
         <div className='iconsFooter'>
-          <a href='' target='_blank'>
+          <a href='https://github.com/Tiodevs' target='_blank'>
             
           <img src={LogoGit} alt='IconeFooter'/>
           </a>
-          <a href='' target='_blank'>
+          <a href='https://www.linkedin.com/in/felipe-pereira-dos-santos-a1a3b9207/' target='_blank'>
           <img src={LogoLinkedin} alt='IconeFooter'/>
             
           </a>
-          <a href='' target='_blank'>
+          <a href='https://wa.me/+5541987208843' target='_blank'>
           <img src={LogoWhatsApp} alt='IconeFooter'/>
             
           </a>
-          <a href='' target='_blank'>
+          <a href='https://www.instagram.com/somente_ofelipe/' target='_blank'>
           <img src={LogoIntagram} alt='IconeFooter'/>
             
           </a>

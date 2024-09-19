@@ -17,6 +17,7 @@
 .capaProjeto{
     width: 460px;
     height: 345px;
+    border-radius: 30px;
 }
 
 .projetoText{
@@ -87,6 +88,7 @@
         width: 70%;
         height: auto;
         margin-bottom: 40px;
+        border-radius: 30px;
     }
     
     .projetoText, .projetoText2{
