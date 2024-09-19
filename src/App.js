@@ -106,12 +106,12 @@ function App() {
             <p className='sobreDescricao'>Mini bio</p>
           </div>
 
-          <div className='sobreCards'>
+          <div className='sobreCards a'>
             <h1 className='sobreCardsTitulo'>Voluntário </h1>
             <p className='sobreCardsDescricao'>Em março de 2023, decidi pausar minha carreira para dedicar dois anos ao serviço voluntário em prol da comunidade. Durante esse período, tenho colaborado com <b> ONGs, hospitais</b> de tratamento de câncer e pequenas empresas, oferecendo meu apoio em diversas áreas. Para saber mais sobre essa experiência, fique à vontade para visitar meu LinkedIn.</p>
           </div>
 
-          <div className='sobreCards a'>
+          <div className='sobreCards'>
             <h1 className='sobreCardsTitulo'>22 anos de idade</h1>
             <p className='sobreCardsDescricao'>Eu tenho <b>22 anos</b> de idade sou do Brasil, Curitiba. Sou apaixonado por tocar instrumentos, ler livros, escrever artigos, tirar fotos, conhecer pessoas e lugares novos.</p>
           </div>
